@@ -15,7 +15,10 @@ namespace ComanyManager.Models
         public int CEP { get; set; }
         public int AddressNumber { get; set; }
         public string Complement { get; set; }
+
         public Company Company { get; set; }
+        public int CompanyId { get; set; }
+
         public Profession Profession { get; set; } = null;
         public Department Department { get; set; } = null;
 

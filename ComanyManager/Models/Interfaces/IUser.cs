@@ -2,7 +2,7 @@
 
 namespace ComanyManager.Models.Interfaces
 {
-    interface IUser
+    public interface IUser
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -10,10 +10,8 @@ namespace ComanyManager.Models.Interfaces
         public int CEP { get; set; }
         public int AddressNumber { get; set; }
         public string Complement { get; set; }
-
         public Company Company { get; set; }
-
-
+        public int CompanyId { get; set; }
         public Profession Profession { get; set; } 
         public Department Department { get; set; }
 
