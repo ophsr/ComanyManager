@@ -26,9 +26,8 @@ namespace ComanyManager
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            services.AddDbContext<ComanyManagerContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ComanyManagerContext")));
+            services.AddDbContext<ComanyManagerContext>(options => options.UseMySql(Configuration.GetConnectionString("ComanyManagerContext"),
+                builder => builder.MigrationsAssembly("ComanyManager")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

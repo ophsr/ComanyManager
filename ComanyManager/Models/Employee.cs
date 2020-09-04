@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using ComanyManager.Models.Interfaces;
@@ -14,10 +15,9 @@ namespace ComanyManager.Models
         public int CEP { get; set; }
         public int AddressNumber { get; set; }
         public string Complement { get; set; }
-        public Company Company { get; private set; }
-
-        public Profession Profession { get; private set; }
-        public Department Department { get; private set; }
+        public Company Company { get; set; } = null;
+        public Profession Profession { get; set; } = null;
+        public Department Department { get; set; } = null;
 
 
 

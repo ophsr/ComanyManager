@@ -9,6 +9,9 @@ namespace ComanyManager.Models
     {
         public int Id { get; set; }
         public int Name { get; set; }
+        public Company Company { get; set; }
+        public int CompanyId { get; private set; }
+
 
         public Department(int id, int name)
         {

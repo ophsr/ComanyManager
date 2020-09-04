@@ -11,6 +11,12 @@ namespace ComanyManager.Models.Interfaces
         public int AddressNumber { get; set; }
         public string Complement { get; set; }
 
+        public Company Company { get; set; }
+
+
+        public Profession Profession { get; set; } 
+        public Department Department { get; set; }
+
 
     }
 }
